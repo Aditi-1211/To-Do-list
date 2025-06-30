@@ -12,12 +12,12 @@ body {
 
 .container {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 15px;
   padding: 30px;
   width: 90%;
-  max-width: 500px;
+  max-width: 550px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
@@ -41,18 +41,20 @@ input[type="text"] {
   border: none;
 }
 
-button {
+.add-btn {
   padding: 10px 20px;
-  background-color: #0b5ed7;
+  background: linear-gradient(to right, #ff512f, #dd2476);
   color: white;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
-  background-color: #084298;
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -82,10 +84,40 @@ li {
 .delete-btn:hover {
   background-color: #a71d2a;
 }
+
 .edit-input {
   font-size: 16px;
   padding: 8px;
   width: 100%;
   border-radius: 6px;
   border: 1px solid #ccc;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
 }
