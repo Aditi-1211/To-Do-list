@@ -15,8 +15,6 @@ This project helps users add, view, mark, and delete daily tasks with an intuiti
 
 -Filter tasks by All / Completed / Pending
 
--LocalStorage support (tasks stay saved even after refreshing)
-
 -Minimal and clean UI
 
 -----------------------------------------------------------------------------------------------------------------------------
